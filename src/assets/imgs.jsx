@@ -1,0 +1,11 @@
+export { default as SECTION1IMG } from "./imgs/section1Img.png";
+export { default as SECTION2IMG } from "./imgs/section2Img.png";
+export { default as SECTION4IMG } from "./imgs/section4Img.png";
+export { default as SECTION51IMG } from "./imgs/section51Img.png";
+export { default as SECTION52IMG } from "./imgs/section52Img.png";
+export { default as SECTION53IMG } from "./imgs/section53Img.png";
+export { default as SECTION6IMG } from "./imgs/section6Img.png";
+export { default as SECTION7IMG } from "./imgs/section7Img.png";
+export { default as SECTION8IMG } from "./imgs/section8Img.png";
+export { default as SECTION9IMG } from "./imgs/section9Img.png";
+export { default as FOOTER } from "./imgs/footer.png";
