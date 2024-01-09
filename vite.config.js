@@ -11,6 +11,7 @@ export default defineConfig({
       pages: "/src/pages",
       styles: "/src/styles",
       containers: "/src/containers",
+      utils: "/src/utils",
     },
   },
   build: {

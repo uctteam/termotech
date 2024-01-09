@@ -8,8 +8,15 @@ import {
   YoutubeOutlined,
 } from "@ant-design/icons";
 import { FOOTER } from "assets/imgs";
+import { useTranslation } from "react-i18next";
+import { getLocale } from "utils/locales/getLocale";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+  const { i18n } = useTranslation();
+  const changeLang = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <div
       className="bg-[#000] bg-cover bg-right-bottom py-7"
@@ -54,7 +61,7 @@ export const Footer = () => {
               Е-mail: gratus@service.com
             </a>
             <p data-aos="fade-up" className="text-base text-white opacity-60">
-              обращение по общим вопросам
+              обращение по общим вопросам {t("title")}
             </p>
             <div
               data-aos="fade-up"
@@ -63,13 +70,28 @@ export const Footer = () => {
               <span className="text-white text-base font-normal">
                 <GlobalOutlined />
               </span>
-              <span className="text-white text-base font-normal cursor-pointer">
+              <span
+                onClick={() => changeLang("RU")}
+                className={`text-base font-normal cursor-pointer ${
+                  getLocale() == "RU" ? "text-[#F58634]" : "text-white"
+                }`}
+              >
                 RU
               </span>
-              <span className="text-white text-base font-normal cursor-pointer">
+              <span
+                onClick={() => changeLang("UZ")}
+                className={`text-base font-normal cursor-pointer ${
+                  getLocale() == "UZ" ? "text-[#F58634]" : "text-white"
+                }`}
+              >
                 UZ
               </span>
-              <span className="text-white text-base font-normal cursor-pointer">
+              <span
+                onClick={() => changeLang("EN")}
+                className={`text-base font-normal cursor-pointer ${
+                  getLocale() == "EN" ? "text-[#F58634]" : "text-white"
+                }`}
+              >
                 EN
               </span>
             </div>
