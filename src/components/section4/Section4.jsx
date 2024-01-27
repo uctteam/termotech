@@ -134,13 +134,7 @@ export const Section4 = () => {
           >
             {data1?.map((e, i) => (
               <SwiperSlide key={i}>
-                <div
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
-                  className="rounded-md bg-white overflow-hidden h-[465px]"
-                >
+                <div className="rounded-md bg-white overflow-hidden h-[465px]">
                   <Swiper
                     autoplay={{
                       delay: 2000,
@@ -156,7 +150,6 @@ export const Section4 = () => {
                           src={k}
                           width={200}
                           height={240}
-                          loading="lazy"
                           className="w-full h-[240px] object-cover object-center"
                         />
                       </SwiperSlide>

@@ -29,9 +29,7 @@ export const Section3 = () => {
               data-aos="fade-up"
               className="text-xl text-[#475467] max-w-[478px] max-lg:mx-auto max-lg:text-center max-md:text-lg max-sm:text-sm"
             >
-              pThe design of furniture holds substantial influence over the
-              aesthetics, ambiance, and usability of an area, exerting a
-              profound effect on our everyday experiences.
+              {t("section3.text")}
             </p>
           </div>
           <div className="w-[60%] max-lg:w-full">

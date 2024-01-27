@@ -6,17 +6,17 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
-import { SECTION6IMG } from "assets/imgs";
+import { A1, A2 } from "assets/imgs";
 
 const data = [
   {
-    img: SECTION6IMG,
+    img: A1,
     h4: "наши продукты",
     h5: "loorem ipsum de fleta fletcha sondera",
     p: "Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price",
   },
   {
-    img: SECTION6IMG,
+    img: A2,
     h4: "наши продукты",
     h5: "loorem ipsum de fleta fletcha sondera",
     p: "Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price",
@@ -37,18 +37,12 @@ export const Section6 = () => {
         >
           {data?.map((e, i) => (
             <SwiperSlide key={i}>
-              <div
-                data-aos="fade-up"
-                data-aos-delay="100"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                className="grid grid-cols-2 gap-6 max-md:grid-cols-1"
-              >
+              <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1">
                 <div className="col-span-1 max-md:order-2">
                   <img
                     src={e?.img}
-                    className="w-full object-contain object-left max-h-[520px]"
-                    loading="lazy"
+                    className="w-full object-contain object-right max-h-[520px]"
+                    
                     alt=""
                   />
                 </div>

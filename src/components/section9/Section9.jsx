@@ -93,7 +93,7 @@ export const Section9 = () => {
               <img
                 src={e?.img}
                 className="w-[150px] h-[50px] object-contain object-center max-sm:w-[100px] max-sm:h-[33px]"
-                loading="lazy"
+                
                 alt=""
               />
             </div>

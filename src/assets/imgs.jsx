@@ -11,6 +11,8 @@ export { default as SECTION9IMG } from "./imgs/section9Img.png";
 export { default as FOOTER } from "./imgs/footer.png";
 export { default as S1 } from "./imgs/s1.jpg";
 export { default as S2 } from "./imgs/s2.jpg";
+export { default as A1 } from "./imgs/a1.png";
+export { default as A2 } from "./imgs/a2.png";
 
 export { default as C111 } from "./imgs/c111.jpg";
 export { default as C112 } from "./imgs/c112.jpg";
