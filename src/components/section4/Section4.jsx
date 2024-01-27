@@ -156,6 +156,7 @@ export const Section4 = () => {
                           src={k}
                           width={200}
                           height={240}
+                          loading="lazy"
                           className="w-full h-[240px] object-cover object-center"
                         />
                       </SwiperSlide>

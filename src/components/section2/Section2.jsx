@@ -27,6 +27,7 @@ export const Section2 = () => {
         data-aos="fade-up"
         src={SECTION2IMG}
         alt="team"
+        loading="lazy"
         className="h-[560px]  max-sm:h-[420px] w-full object-cover object-center mt-12 rounded-3xl"
       />
     </div>

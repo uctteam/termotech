@@ -84,7 +84,12 @@ export const Section7 = () => {
                 i % 2 == 0 ? "mt-[200px] max-lg:mt-24" : ""
               }`}
             >
-              <Image src={e?.img} width={200} className="w-full" />
+              <Image
+                src={e?.img}
+                width={200}
+                className="w-full"
+                loading="lazy"
+              />
             </div>
           </SwiperSlide>
         ))}

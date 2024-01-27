@@ -65,7 +65,12 @@ export const Section8 = () => {
                 data-aos-easing="ease-in-out"
                 className={`w-full`}
               >
-                <Image src={e?.img} width={200} className="w-full" />
+                <Image
+                  src={e?.img}
+                  width={200}
+                  className="w-full"
+                  loading="lazy"
+                />
               </div>
             </SwiperSlide>
           ))}

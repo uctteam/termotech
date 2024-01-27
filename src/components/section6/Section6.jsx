@@ -48,6 +48,7 @@ export const Section6 = () => {
                   <img
                     src={e?.img}
                     className="w-full object-contain object-left max-h-[520px]"
+                    loading="lazy"
                     alt=""
                   />
                 </div>
