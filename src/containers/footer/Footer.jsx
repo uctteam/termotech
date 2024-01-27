@@ -26,12 +26,18 @@ export const Footer = () => {
         <div className="flex items-center justify-between">
           <h2
             data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
             className="text-4xl text-[#FFF] font-semibold  max-md:text-3xl max-sm:text-2xl"
           >
             Достичь большего <span className="text-[#F58634]">вместе</span>
           </h2>
           <a
             data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
             href="#section1"
             className="text-2xl text-[#FFF] font-bold flex items-center justify-center gap-2 max-md:hidden"
           >
@@ -45,26 +51,47 @@ export const Footer = () => {
           <div className="">
             <a
               data-aos="fade-up"
-              href="tel:+998712000000"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              href="tel:+998 93 926 00 00"
               className="text-xl text-white block max-sm:text-lg"
             >
-              +998 71 200 00 00
+              +998 93 926 00 00
             </a>
-            <p data-aos="fade-up" className="text-base text-white opacity-60">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              className="text-base text-white opacity-60"
+            >
               Reception (обращение по общим вопросам)
             </p>
             <a
               data-aos="fade-up"
-              href="mailto:gratus@service.com"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              href="mailto:Diamond.decor.uz@gamil.com"
               className="text-xl text-white mt-6 block max-sm:text-lg"
             >
-              Е-mail: gratus@service.com
+              Е-mail: Diamond.decor.uz@gamil.com
             </a>
-            <p data-aos="fade-up" className="text-base text-white opacity-60">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              className="text-base text-white opacity-60"
+            >
               обращение по общим вопросам {t("title")}
             </p>
             <div
               data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
               className="flex items-center justify-start gap-2 mt-6"
             >
               <span className="text-white text-base font-normal">
@@ -99,6 +126,9 @@ export const Footer = () => {
           <div className="flex flex-col justify-start items-start gap-3">
             <a
               data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
               className="text-white text-base font-normal"
               href="#section3"
             >
@@ -106,6 +136,9 @@ export const Footer = () => {
             </a>
             <a
               data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
               className="text-white text-base font-normal"
               href="#section4"
             >
@@ -113,6 +146,9 @@ export const Footer = () => {
             </a>
             <a
               data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
               className="text-white text-base font-normal"
               href="#section5"
             >
@@ -120,6 +156,9 @@ export const Footer = () => {
             </a>
             <a
               data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
               className="text-white text-base font-normal"
               href="#section6"
             >
@@ -127,6 +166,9 @@ export const Footer = () => {
             </a>
             <a
               data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
               className="text-white text-base font-normal"
               href="#section7"
             >
@@ -134,6 +176,9 @@ export const Footer = () => {
             </a>
             <a
               data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
               className="text-white text-base font-normal"
               href="#section8"
             >
@@ -143,16 +188,28 @@ export const Footer = () => {
           <div className="flex flex-col items-end justify-end max-md:items-start">
             <a
               data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
               href="#"
               className="flex items-center justify-center text-base text-[#FFF] gap-3 px-5 py-3 border border-white rounded-3xl w-max max-md:w-full"
             >
               <FileTextOutlined /> Cкачать презентацию
             </a>
-            <p data-aos="fade-up" className="text-base text-[#FFF] mt-8">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              className="text-base text-[#FFF] mt-8"
+            >
               Мы в социальных сетях
             </p>
             <div
               data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
               className="flex items-center justify-center gap-3 w-max mt-3"
             >
               <a

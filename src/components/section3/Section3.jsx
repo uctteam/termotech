@@ -4,8 +4,10 @@ import {
   LoadingOutlined,
   WifiOutlined,
 } from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
 
 export const Section3 = () => {
+  const { t } = useTranslation();
   return (
     <div className="container mx-auto">
       <div className="my-14  max-md:my-10" id="section3">
@@ -15,7 +17,7 @@ export const Section3 = () => {
               data-aos="fade-up"
               className="text-lg text-[#18A0FB] max-lg:mx-auto max-lg:text-center max-md:text-sm"
             >
-              Премущество
+              {t("header.head2")}
             </h4>
             <h5
               data-aos="fade-up"
@@ -36,6 +38,9 @@ export const Section3 = () => {
             <div className="grid grid-cols-2 max-md:grid-cols-1 max-md:gap-2">
               <div
                 data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
                 className="hover:bg-[#18A0FB] rounded-3xl hover:scale-105 transition ease-linear group border-r border-b max-md:border-x max-md:border-y-0"
               >
                 <div className="p-7 max-md:p-5">
@@ -55,6 +60,9 @@ export const Section3 = () => {
               </div>
               <div
                 data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
                 className="hover:bg-[#18A0FB] rounded-3xl hover:scale-105 transition ease-linear group border-l border-b max-md:border-x max-md:border-y-0"
               >
                 <div className="p-7 max-md:p-5">
@@ -74,6 +82,9 @@ export const Section3 = () => {
               </div>
               <div
                 data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
                 className="hover:bg-[#18A0FB] rounded-3xl hover:scale-105 transition ease-linear group border-r border-t max-md:border-x max-md:border-y-0"
               >
                 <div className="p-7 max-md:p-5">
@@ -93,6 +104,9 @@ export const Section3 = () => {
               </div>
               <div
                 data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
                 className="hover:bg-[#18A0FB] rounded-3xl hover:scale-105 transition ease-linear group border-l border-t max-md:border-x max-md:border-y-0"
               >
                 <div className="p-7 max-md:p-5">

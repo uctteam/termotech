@@ -1,9 +1,11 @@
 import { LOGO } from "assets/icon";
 import { MenuUnfoldOutlined } from "@ant-design/icons";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
   const [menu, setmenu] = useState(false);
+  const { t } = useTranslation();
   return (
     <>
       <div className="container mx-auto text-white">
@@ -13,7 +15,7 @@ export const Header = () => {
               data-aos="fade-right"
               src={LOGO}
               alt="logo"
-              className="w-16 object-cover"
+              className="w-28 object-cover"
             />
           </div>
           <div
@@ -36,25 +38,25 @@ export const Header = () => {
               <img src={LOGO} alt="logo" className="w-20 object-cover" />
             </li>
             <li data-aos="fade-left" onClick={() => setmenu(false)}>
-              <a href="#section2">О нас</a>
+              <a href="#section2">{t("header.head1")}</a>
             </li>
             <li data-aos="fade-left" onClick={() => setmenu(false)}>
-              <a href="#section3">Переущество</a>
+              <a href="#section3">{t("header.head2")}</a>
             </li>
             <li data-aos="fade-left" onClick={() => setmenu(false)}>
-              <a href="#section4">Продукты</a>
+              <a href="#section4">{t("header.head3")}</a>
             </li>
             <li data-aos="fade-left" onClick={() => setmenu(false)}>
-              <a href="#section5">Наша цель</a>
+              <a href="#section5">{t("header.head4")}</a>
             </li>
             <li data-aos="fade-left" onClick={() => setmenu(false)}>
-              <a href="#section6">Фотогалерея</a>
+              <a href="#section6">{t("header.head5")}</a>
             </li>
             <li data-aos="fade-left" onClick={() => setmenu(false)}>
-              <a href="#section7">Лицензия</a>
+              <a href="#section7">{t("header.head6")}</a>
             </li>
             <li data-aos="fade-left" onClick={() => setmenu(false)}>
-              <a href="#section8">Нам доверяют</a>
+              <a href="#section8">{t("header.head7")}</a>
             </li>
           </ul>
         </header>

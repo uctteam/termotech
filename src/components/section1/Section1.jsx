@@ -1,7 +1,9 @@
 import { SECTION1IMG } from "assets/imgs";
 import { Header } from "containers";
+import { useTranslation } from "react-i18next";
 
 export const Section1 = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div
@@ -16,15 +18,8 @@ export const Section1 = () => {
               data-aos="fade-up"
               className="text-7xl max-w-[806px] font-bold text-white max-md:text-5xl max-sm:text-4xl"
             >
-              Опыт, качество и разумная цена
+              {t("section1.text")}
             </h1>
-            <p
-              data-aos="fade-up"
-              className="text-xl font-normal max-w-[660px] mt-8 text-white max-md:text-base"
-            >
-              Amplify your social media and SEO rankings with Top Rank SMM. Get
-              the ultimate edge with our
-            </p>
           </div>
         </div>
       </div>

@@ -51,6 +51,12 @@
     display: none;
   }
 }
+.mySwiperIn {
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: block;
+  }
+}
 .mySwiperOne {
   .swiper-button-next,
   .swiper-button-prev {

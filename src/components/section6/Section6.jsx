@@ -39,6 +39,9 @@ export const Section6 = () => {
             <SwiperSlide key={i}>
               <div
                 data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
                 className="grid grid-cols-2 gap-6 max-md:grid-cols-1"
               >
                 <div className="col-span-1 max-md:order-2">

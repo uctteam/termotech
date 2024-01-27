@@ -4,6 +4,7 @@ import "swiper/css/free-mode";
 import { FreeMode } from "swiper/modules";
 import { SECTION9IMG } from "assets/imgs";
 import { Autoplay } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 const data = [
   {
@@ -39,16 +40,23 @@ const data = [
 ];
 
 export const Section9 = () => {
+  const { t } = useTranslation();
   return (
     <div className="py-14 max-md:py-10" id="section9">
       <h5
         data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
         className="text-lg text-[#18A0FB] text-center max-lg:text-center max-md:text-sm"
       >
-        Нам доверяют
+        {t("header.head7")}
       </h5>
       <p
         data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
         className="text-4xl mb-11 text-[#1E1E1E] font-bold text-center mx-auto max-md:text-3xl max-sm:text-2xl max-w-[728px]"
       >
         наши давние партнеры

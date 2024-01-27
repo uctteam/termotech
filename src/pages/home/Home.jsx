@@ -30,7 +30,7 @@ export const Home = () => {
     AOS.init();
   }, []);
 
-  if (loading) return <Loading />;
+  // if (loading) return <Loading />;
 
   return (
     <div className="container-back">
