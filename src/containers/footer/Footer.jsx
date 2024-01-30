@@ -7,9 +7,9 @@ import {
   UpCircleOutlined,
   YoutubeOutlined,
 } from "@ant-design/icons";
-import { FOOTER } from "assets/imgs";
 import { useTranslation } from "react-i18next";
 import { getLocale } from "utils/locales/getLocale";
+import StarfieldAnimation from "react-starfield-animation";
 
 export const Footer = () => {
   const { t } = useTranslation();
@@ -18,11 +18,19 @@ export const Footer = () => {
     i18n.changeLanguage(lng);
   };
   return (
-    <div
-      className="bg-[#000] bg-cover bg-right-bottom py-7"
-      style={{ backgroundImage: `url(${FOOTER})` }}
-    >
-      <div className="container mx-auto">
+    <div className="bg-[#000] py-7 relative overflow-hidden">
+      <StarfieldAnimation
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+        }}
+        numParticles={1200}
+        particleSpeed={0}
+        dx={0.000000001} // x speed of stars in px/frame, default 0.05
+        dy={0.000000001}
+      />
+      <div className="container mx-auto relative z-50">
         <div className="flex items-center justify-between">
           <h2
             data-aos="fade-up"
@@ -130,9 +138,19 @@ export const Footer = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               className="text-white text-base font-normal"
+              href="#section2"
+            >
+              {t("header.head1")}
+            </a>
+            <a
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              className="text-white text-base font-normal"
               href="#section3"
             >
-              Переущество
+              {t("header.head2")}
             </a>
             <a
               data-aos="fade-up"
@@ -142,7 +160,7 @@ export const Footer = () => {
               className="text-white text-base font-normal"
               href="#section4"
             >
-              Продукты
+              {t("header.head3")}
             </a>
             <a
               data-aos="fade-up"
@@ -152,7 +170,7 @@ export const Footer = () => {
               className="text-white text-base font-normal"
               href="#section5"
             >
-              Наша цель
+              {t("header.head4")}
             </a>
             <a
               data-aos="fade-up"
@@ -162,7 +180,7 @@ export const Footer = () => {
               className="text-white text-base font-normal"
               href="#section6"
             >
-              Фотогалерея
+              {t("header.head5")}
             </a>
             <a
               data-aos="fade-up"
@@ -172,17 +190,7 @@ export const Footer = () => {
               className="text-white text-base font-normal"
               href="#section7"
             >
-              Лицензия
-            </a>
-            <a
-              data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              className="text-white text-base font-normal"
-              href="#section8"
-            >
-              Нам доверяют
+              {t("header.head6")}
             </a>
           </div>
           <div className="flex flex-col items-end justify-end max-md:items-start">

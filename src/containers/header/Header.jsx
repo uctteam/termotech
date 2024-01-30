@@ -28,7 +28,7 @@ export const Header = () => {
           <ul
             className={`flex items-center justify-center gap-[32px] max-md:fixed max-md:top-0 max-md:left-0 max-md:flex-col max-md:h-[100vh] max-md:w-full max-md:bg-slate-800 max-md:gap-6 transition ease-linear ${
               menu ? "max-md:translate-x-[0]" : "max-md:translate-x-[-100%]"
-            }`}
+            } z-[999999]`}
           >
             <li
               data-aos="fade-left"

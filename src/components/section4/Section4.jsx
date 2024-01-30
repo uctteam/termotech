@@ -4,77 +4,18 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Navigation, Autoplay } from "swiper/modules";
-import {
-  C111,
-  C112,
-  C121,
-  C122,
-  C131,
-  C132,
-  C141,
-  C142,
-  C143,
-  C144,
-  C145,
-  C146,
-  C151,
-  C152,
-  C153,
-  C154,
-  C161,
-  C162,
-  C163,
-  C164,
-  C165,
-  C166,
-  C167,
-  C171,
-  C172,
-  C173,
-  C174,
-  C175,
-  C176,
-  C177,
-} from "assets/imgs";
 import { Rate } from "antd";
 import { useTranslation } from "react-i18next";
 import { Image } from "antd";
 
 const data1 = [
   {
-    img: [C111, C112],
+    img: [
+      "https://images.pexels.com/photos/1172064/pexels-photo-1172064.jpeg?cs=srgb&dl=pexels-oleksandr-p-1172064.jpg&fm=jpg",
+      "https://image.winudf.com/v2/image1/Y29tLkhEU2NlbmVyeXdhbGxwYXBlci5zY2VuZXJ5aW1hZ2UubmF0dXJld2FsbHBhcGVyLmhkd2FsbHBhcGVyX3NjcmVlbl8wXzE1OTUzMjQzMDJfMDYx/screen-0.jpg?fakeurl=1&type=.webp",
+    ],
     h5: "PVC panel",
     p: "Razmer 1,22*2,44 <br/> 1,22*2,80 <br/> Qalinligi 3mm",
-  },
-  {
-    img: [C121, C122],
-    h5: "PVC panel",
-    p: "Razmer 1,22*2,44 <br/> 1,22*2,80 <br/> Qalinligi 3mm",
-  },
-  {
-    img: [C131, C132],
-    h5: "PVC panel",
-    p: "Razmer 1,22*2,44 <br/> 1,22*2,80 <br/> Qalinligi 3mm",
-  },
-  {
-    img: [C141, C142, C143, C144, C145, C146],
-    h5: "“Decorative plastic panel” devor uchun",
-    p: "Razmer 1,22*2,44 <br/> 1,22*2,80 <br/> Qalinligi 3mm",
-  },
-  {
-    img: [C151, C152, C153, C154],
-    h5: "Decorative plastic panel va Decorative MDF panel ,devor uchun",
-    p: "Razmer eni 25smlik<br/> Qalinligi 2xil 5,5mm va 6,5 mm",
-  },
-  {
-    img: [C161, C162, C163, C164, C165, C166, C167],
-    h5: "DECORATIVE BAGET MDF",
-    p: "",
-  },
-  {
-    img: [C171, C172, C173, C174, C175, C176, C177],
-    h5: "DECORATIVE BAGET MDF",
-    p: "",
   },
 ];
 
@@ -134,7 +75,7 @@ export const Section4 = () => {
           >
             {data1?.map((e, i) => (
               <SwiperSlide key={i}>
-                <div className="rounded-md bg-white overflow-hidden h-[465px]">
+                <div className="rounded-md bg-white overflow-hidden h-[480px]">
                   <Swiper
                     autoplay={{
                       delay: 2000,

@@ -11,7 +11,7 @@ const data = [
     img: SECTION7IMG,
   },
   {
-    img: SECTION7IMG,
+    img: "https://images.squarespace-cdn.com/content/v1/61c4da8eb1b30a201b9669f2/1696691175374-MJY4VWB1KS8NU3DE3JK1/Sounds-of-Nature.jpg",
   },
   {
     img: SECTION7IMG,
@@ -20,7 +20,7 @@ const data = [
     img: SECTION7IMG,
   },
   {
-    img: SECTION7IMG,
+    img: "https://images.squarespace-cdn.com/content/v1/61c4da8eb1b30a201b9669f2/1696691175374-MJY4VWB1KS8NU3DE3JK1/Sounds-of-Nature.jpg",
   },
   {
     img: SECTION7IMG,
@@ -67,7 +67,7 @@ export const Section7 = () => {
             slidesPerView: 2.5,
           },
           576: {
-            slidesPerView: 3.5,
+            slidesPerView: 4.5,
           },
           960: {
             slidesPerView: 5.5,
@@ -87,8 +87,8 @@ export const Section7 = () => {
               <Image
                 src={e?.img}
                 width={200}
-                className="w-full"
-                
+                height={500}
+                className="w-full h-full object-cover object-center rounded-lg"
               />
             </div>
           </SwiperSlide>
