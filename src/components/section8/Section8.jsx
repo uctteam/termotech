@@ -2,20 +2,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import { FreeMode } from "swiper/modules";
-import { S1, S2 } from "assets/imgs";
 import { Image } from "antd";
 import { useTranslation } from "react-i18next";
+import { imgUrl } from "service";
 
-const data = [
-  {
-    img: S1,
-  },
-  {
-    img: S2,
-  },
-];
-
-export const Section8 = () => {
+export const Section8 = ({ data }) => {
   const { t } = useTranslation();
   return (
     <div className="container mx-auto">
@@ -36,7 +27,7 @@ export const Section8 = () => {
           data-aos-easing="ease-in-out"
           className="text-4xl mb-11 text-[#1E1E1E] font-bold text-center mx-auto max-md:text-3xl max-sm:text-2xl max-w-[728px]"
         >
-          подтверждение качества нашей работы
+          {t("header.head6")}
         </p>
         <Swiper
           slidesPerView={4}
@@ -66,10 +57,9 @@ export const Section8 = () => {
                 className={`w-full`}
               >
                 <Image
-                  src={e?.img}
+                  src={imgUrl + e?.file?.url_1}
                   width={200}
                   className="w-full"
-                  
                 />
               </div>
             </SwiperSlide>

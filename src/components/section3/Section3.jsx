@@ -6,7 +6,7 @@ import {
 } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 
-export const Section3 = () => {
+export const Section3 = ({ data, allFour }) => {
   const { t } = useTranslation();
   return (
     <div className="container mx-auto">
@@ -23,13 +23,13 @@ export const Section3 = () => {
               data-aos="fade-up"
               className="text-4xl font-bold text-[#373435] mt-3 mb-8 max-w-[458px] max-lg:mx-auto max-lg:text-center max-md:text-3xl max-sm:text-2xl"
             >
-              Добавим яркость и стиль вашему дому
+              {data?.content?.title}
             </h5>
             <p
               data-aos="fade-up"
               className="text-xl text-[#475467] max-w-[478px] max-lg:mx-auto max-lg:text-center max-md:text-lg max-sm:text-sm"
             >
-              {t("section3.text")}
+              {data?.content?.description}
             </p>
           </div>
           <div className="w-[60%] max-lg:w-full">
@@ -47,12 +47,11 @@ export const Section3 = () => {
                       <CheckCircleOutlined />
                     </div>
                     <p className="text-lg text-[#0D0E25] group-hover:text-white transition ease-linear max-md:text-base">
-                      Надежный
+                      {allFour?.[0]?.content?.title}
                     </p>
                   </div>
                   <p className="mt-5 text-base text-[475467] group-hover:text-white transition ease-linear max-md:mt-3 max-md:text-sm">
-                    Data insight yang banyak kan bakal disimpen di database, ya
-                    kalo datanya banyak kan jadi gede juga size database-nya.
+                    {allFour?.[0]?.content?.description}
                   </p>
                 </div>
               </div>
@@ -69,12 +68,11 @@ export const Section3 = () => {
                       <WifiOutlined />
                     </div>
                     <p className="text-lg text-[#0D0E25] group-hover:text-white transition ease-linear max-md:text-base">
-                      Многопрофильные услуги
+                      {allFour?.[1]?.content?.title}
                     </p>
                   </div>
                   <p className="mt-5 text-base text-[475467] group-hover:text-white transition ease-linear max-md:mt-3 max-md:text-sm">
-                    Kalo ada insight, kamu akan bulak balik ngecek kan? Otomatis
-                    server harus idup terus, itu butuh listrik!
+                    {allFour?.[1]?.content?.description}
                   </p>
                 </div>
               </div>
@@ -91,12 +89,11 @@ export const Section3 = () => {
                       <FireOutlined />
                     </div>
                     <p className="text-lg text-[#0D0E25] group-hover:text-white transition ease-linear max-md:text-base">
-                      хорошая теплопередача
+                      {allFour?.[2]?.content?.title}
                     </p>
                   </div>
                   <p className="mt-5 text-base text-[475467] group-hover:text-white transition ease-linear max-md:mt-3 max-md:text-sm">
-                    Kalo ada insight, kamu akan bulak balik ngecek kan? Otomatis
-                    server harus idup terus, itu butuh listrik!
+                    {allFour?.[2]?.content?.description}
                   </p>
                 </div>
               </div>
@@ -113,12 +110,11 @@ export const Section3 = () => {
                       <LoadingOutlined />
                     </div>
                     <p className="text-lg text-[#0D0E25] group-hover:text-white transition ease-linear max-md:text-base">
-                      Долговечная качество
+                      {allFour?.[3]?.content?.title}
                     </p>
                   </div>
                   <p className="mt-5 text-base text-[475467] group-hover:text-white transition ease-linear max-md:mt-3 max-md:text-sm">
-                    Kalo ada insight, kamu akan bulak balik ngecek kan? Otomatis
-                    server harus idup terus, itu butuh listrik!
+                    {allFour?.[3]?.content?.description}
                   </p>
                 </div>
               </div>

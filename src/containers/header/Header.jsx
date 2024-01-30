@@ -50,13 +50,13 @@ export const Header = () => {
               <a href="#section5">{t("header.head4")}</a>
             </li>
             <li data-aos="fade-left" onClick={() => setmenu(false)}>
-              <a href="#section6">{t("header.head5")}</a>
+              <a href="#section7">{t("header.head5")}</a>
             </li>
             <li data-aos="fade-left" onClick={() => setmenu(false)}>
-              <a href="#section7">{t("header.head6")}</a>
+              <a href="#section8">{t("header.head6")}</a>
             </li>
             <li data-aos="fade-left" onClick={() => setmenu(false)}>
-              <a href="#section8">{t("header.head7")}</a>
+              <a href="#section9">{t("header.head7")}</a>
             </li>
           </ul>
         </header>

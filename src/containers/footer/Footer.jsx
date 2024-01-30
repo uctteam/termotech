@@ -3,6 +3,8 @@ import {
   FileTextOutlined,
   GlobalOutlined,
   InstagramOutlined,
+  MailOutlined,
+  ShakeOutlined,
   TwitterOutlined,
   UpCircleOutlined,
   YoutubeOutlined,
@@ -10,12 +12,15 @@ import {
 import { useTranslation } from "react-i18next";
 import { getLocale } from "utils/locales/getLocale";
 import StarfieldAnimation from "react-starfield-animation";
+import { imgUrl } from "service";
+import { TELEGRAM } from "assets/icon";
 
-export const Footer = () => {
+export const Footer = ({ data }) => {
   const { t } = useTranslation();
   const { i18n } = useTranslation();
   const changeLang = (lng) => {
     i18n.changeLanguage(lng);
+    window.location.reload();
   };
   return (
     <div className="bg-[#000] py-7 relative overflow-hidden">
@@ -62,39 +67,21 @@ export const Footer = () => {
               data-aos-delay="100"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              href="tel:+998 93 926 00 00"
-              className="text-xl text-white block max-sm:text-lg"
+              href={`tel:${data?.phone_number}`}
+              className="text-xl text-white max-sm:text-lg w-max flex items-center justify-start gap-5"
             >
-              +998 93 926 00 00
+              <ShakeOutlined /> {data?.phone_number}
             </a>
-            <p
-              data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              className="text-base text-white opacity-60"
-            >
-              Reception (обращение по общим вопросам)
-            </p>
             <a
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              href="mailto:Diamond.decor.uz@gamil.com"
-              className="text-xl text-white mt-6 block max-sm:text-lg"
+              href={`mailto:${data?.email}`}
+              className="text-xl text-white mt-6 max-sm:text-lg w-max flex items-center justify-start gap-5"
             >
-              Е-mail: Diamond.decor.uz@gamil.com
+              <MailOutlined /> {data?.email}
             </a>
-            <p
-              data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              className="text-base text-white opacity-60"
-            >
-              обращение по общим вопросам {t("title")}
-            </p>
             <div
               data-aos="fade-up"
               data-aos-delay="100"
@@ -106,25 +93,25 @@ export const Footer = () => {
                 <GlobalOutlined />
               </span>
               <span
-                onClick={() => changeLang("RU")}
+                onClick={() => changeLang("ru")}
                 className={`text-base font-normal cursor-pointer ${
-                  getLocale() == "RU" ? "text-[#F58634]" : "text-white"
+                  getLocale() == "ru" ? "text-[#F58634]" : "text-white"
                 }`}
               >
                 RU
               </span>
               <span
-                onClick={() => changeLang("UZ")}
+                onClick={() => changeLang("uz")}
                 className={`text-base font-normal cursor-pointer ${
-                  getLocale() == "UZ" ? "text-[#F58634]" : "text-white"
+                  getLocale() == "uz" ? "text-[#F58634]" : "text-white"
                 }`}
               >
                 UZ
               </span>
               <span
-                onClick={() => changeLang("EN")}
+                onClick={() => changeLang("en")}
                 className={`text-base font-normal cursor-pointer ${
-                  getLocale() == "EN" ? "text-[#F58634]" : "text-white"
+                  getLocale() == "en" ? "text-[#F58634]" : "text-white"
                 }`}
               >
                 EN
@@ -178,7 +165,7 @@ export const Footer = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               className="text-white text-base font-normal"
-              href="#section6"
+              href="#section7"
             >
               {t("header.head5")}
             </a>
@@ -188,7 +175,7 @@ export const Footer = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               className="text-white text-base font-normal"
-              href="#section7"
+              href="#section8"
             >
               {t("header.head6")}
             </a>
@@ -199,8 +186,11 @@ export const Footer = () => {
               data-aos-delay="100"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              href="#"
+              href={imgUrl + data?.file?.url_1}
+              target="_blank"
+              download
               className="flex items-center justify-center text-base text-[#FFF] gap-3 px-5 py-3 border border-white rounded-3xl w-max max-md:w-full"
+              rel="noreferrer"
             >
               <FileTextOutlined /> Cкачать презентацию
             </a>
@@ -221,25 +211,25 @@ export const Footer = () => {
               className="flex items-center justify-center gap-3 w-max mt-3"
             >
               <a
-                href="#"
+                href={data?.facebook}
                 className="flex items-center justify-center text-2xl text-[#FFF] p-3 border border-white rounded-full w-max hover:bg-blue-500 hover:border-blue-500 transition-all ease-linear"
               >
                 <FacebookOutlined />
               </a>
               <a
-                href="#"
+                href={data?.instagram}
                 className="flex items-center justify-center text-2xl text-[#FFF] p-3 border border-white rounded-full w-max hover:bg-red-500 hover:border-red-500 transition-all ease-linear"
               >
                 <InstagramOutlined />
               </a>
               <a
-                href="#"
+                href={data?.telegram}
                 className="flex items-center justify-center text-2xl text-[#FFF] p-3 border border-white rounded-full w-max hover:bg-blue-500 hover:border-blue-500 transition-all ease-linear"
               >
-                <TwitterOutlined />
+                <img src={TELEGRAM} alt="" />
               </a>
               <a
-                href="#"
+                href={data?.youtube}
                 className="flex items-center justify-center text-2xl text-[#FFF] p-3 border border-white rounded-full w-max hover:bg-red-500 hover:border-red-500 transition-all ease-linear"
               >
                 <YoutubeOutlined />
@@ -248,11 +238,11 @@ export const Footer = () => {
           </div>
         </div>
         <div className="w-full h-[1px] bg-white mt-11"></div>
-        <div className="flex items-center justify-between mt-7 max-md:justify-center">
+        <div className="flex items-center justify-center mt-7 max-md:justify-center">
           <p className="text-base text-[#FFF]">© 2023 Developed by UCT</p>
-          <p className="text-base text-[#FFF] max-md:hidden">
+          {/* <p className="text-base text-[#FFF] max-md:hidden">
             Политика в области защиты и обработки персональных данных
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

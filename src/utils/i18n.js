@@ -9,13 +9,13 @@ import translationEn from "../locales/en/translation.json";
 import { getLocale } from "./locales/getLocale";
 
 const resources = {
-  UZ: {
+  uz: {
     translation: translationUz,
   },
-  RU: {
+  ru: {
     translation: translationRu,
   },
-  EN: {
+  en: {
     translation: translationEn,
   },
 };
@@ -24,7 +24,7 @@ i18next
   .use(I18nextBrowserLanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: getLocale() ? getLocale() : "UZ",
+    fallbackLng: getLocale() ? getLocale() : "uz",
     debug: false,
     resources,
     detection: {

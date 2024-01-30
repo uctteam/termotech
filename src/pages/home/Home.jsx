@@ -15,14 +15,21 @@ import { useEffect } from "react";
 import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useGet } from "hooks";
+import { getLocale } from "utils/storages";
 
 export const Home = () => {
   const [loading, setloading] = useState(true);
 
+  const { data, isLoading } = useGet({
+    url: `client/find/all?lang=${getLocale()}`,
+    queryKey: ["alldatas", getLocale()],
+  });
+
   useEffect(() => {
     const clearLoading = setTimeout(() => {
       setloading(false);
-    }, 3000);
+    }, 2000);
     return () => clearTimeout(clearLoading);
   }, []);
 
@@ -30,29 +37,35 @@ export const Home = () => {
     AOS.init();
   }, []);
 
-  if (loading) return <Loading />;
+  if (loading || isLoading) return <Loading />;
 
   return (
     <div className="container-back">
       {/* Опыт, качество и разумная цена */}
-      <Section1 />
+      <Section1 data={data?.data?.headers_arr?.[0]} />
       {/* наша компания имеет долгую историю */}
-      <Section2 />
+      <Section2 data={data?.data?.aboutUs_arr?.[0]} />
       {/* Добавим яркость и стиль вашему дому */}
-      <Section3 />
+      <Section3
+        data={data?.data?.advantages_arr?.[0]}
+        allFour={data?.data?.advantages4_arr}
+      />
       {/* Наши продукты */}
       <Section4 />
       {/* обеспечение качественной продукцией в каждый дом */}
-      <Section5 />
+      <Section5
+        data={data?.data?.goal_arr?.[0]}
+        allFour={data?.data?.goal_files}
+      />
       {/* наши продукты */}
-      <Section6 />
+      <Section6 data={data?.data?.our_products_arr} />
       {/* Фотогалерея */}
-      <Section7 />
+      <Section7 data={data?.data?.gallery} />
       {/* Лицензии и Сертификаты */}
-      <Section8 />
+      <Section8 data={data?.data?.licenses} />
       {/* Нам доверяют */}
-      <Section9 />
-      <Footer />
+      <Section9 data={data?.data?.long_time} />
+      <Footer data={data?.data?.footers?.[0]} />
     </div>
   );
 };
