@@ -95,6 +95,7 @@ export const Section4 = () => {
                                   ? imgUrl + f?.url_1
                                   : "https://www.w3schools.com/howto/img_avatar.png"
                               }
+                              loading="lazy"
                             />
                           </SwiperSlide>
                         ))}

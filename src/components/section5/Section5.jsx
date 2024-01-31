@@ -40,6 +40,7 @@ export const Section5 = ({ data, allFour }) => {
                     ? imgUrl + allFour?.[0]?.file?.url_1
                     : SECTION51IMG
                 }
+                loading="lazy"
                 alt=""
                 className="h-[250px] w-full object-cover object-center rounded-lg shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]"
               />
@@ -53,6 +54,7 @@ export const Section5 = ({ data, allFour }) => {
                     ? imgUrl + allFour?.[1]?.file?.url_1
                     : SECTION52IMG
                 }
+                loading="lazy"
                 alt=""
                 className="h-[250px] w-full object-cover object-center rounded-lg shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]"
               />
@@ -68,6 +70,7 @@ export const Section5 = ({ data, allFour }) => {
                     ? imgUrl + allFour?.[2]?.file?.url_1
                     : SECTION53IMG
                 }
+                loading="lazy"
                 alt=""
                 className="w-full max-w-[615px] max-h-[415px] object-cover object-center rounded-lg relative z-20 shadow-[rgba(234,_187,_45,_0.2)_0px_50px_30px_-20px]"
               />

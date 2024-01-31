@@ -60,6 +60,7 @@ export const Section8 = ({ data }) => {
                   src={imgUrl + e?.file?.url_1}
                   width={200}
                   className="w-full"
+                  loading="lazy"
                 />
               </div>
             </SwiperSlide>

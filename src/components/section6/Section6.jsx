@@ -36,6 +36,7 @@ export const Section6 = ({ data }) => {
                     src={imgUrl + e?.file?.url_1}
                     className="w-full object-contain object-right max-h-[520px]"
                     alt=""
+                    loading="lazy"
                   />
                 </div>
                 <div className="col-span-1 max-md:order-1">

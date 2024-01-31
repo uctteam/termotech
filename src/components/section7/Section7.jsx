@@ -59,6 +59,7 @@ export const Section7 = ({ data }) => {
                 width={200}
                 height={500}
                 className="w-full h-full object-cover object-center rounded-lg"
+                loading="lazy"
               />
             </div>
           </SwiperSlide>

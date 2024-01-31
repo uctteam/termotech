@@ -61,6 +61,7 @@ export const Section9 = ({ data }) => {
                 src={imgUrl + e?.file?.url_1}
                 className="w-[150px] h-[50px] object-contain object-center max-sm:w-[100px] max-sm:h-[33px]"
                 alt=""
+                loading="lazy"
               />
             </div>
           </SwiperSlide>
