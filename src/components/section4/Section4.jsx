@@ -11,6 +11,7 @@ import { useGet } from "hooks";
 import { getLocale } from "utils/storages";
 import { Fragment } from "react";
 import { imgUrl } from "service";
+import { LOGO } from "assets/icon";
 
 export const Section4 = () => {
   const { data } = useGet({
@@ -38,9 +39,14 @@ export const Section4 = () => {
                 data-aos-delay="100"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
-                className="text-4xl text-[#1E1E1E] font-bold text-center  max-md:text-3xl max-sm:text-2xl"
+                className="text-4xl text-[#1E1E1E] font-bold text-center  max-md:text-3xl max-sm:text-2xl flex items-center justify-center gap-2"
               >
                 {e?.content?.title}
+                <img
+                  src={LOGO}
+                  className="w-20 h-20 object-contain"
+                  alt="logo"
+                />
               </p>
               <p
                 data-aos="fade-up"
