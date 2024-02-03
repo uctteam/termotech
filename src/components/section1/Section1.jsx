@@ -1,10 +1,8 @@
 import { SECTION1IMG } from "assets/imgs";
 import { Header } from "containers";
-import { useTranslation } from "react-i18next";
 import { imgUrl } from "service";
 
 export const Section1 = ({ data }) => {
-  const { t } = useTranslation();
   return (
     <>
       <div
@@ -16,8 +14,8 @@ export const Section1 = ({ data }) => {
           })`,
         }}
       >
-        <div className="h-full bg-gradient-to-t from-transparent via-transparent to-slate-700">
-          <div className="bg-[#30303071]">
+        <div className="h-full">
+          <div className="bg-[#303030d9]">
             <Header />
           </div>
           <div className="container mx-auto h-screen">

@@ -43,6 +43,8 @@ export const Home = () => {
     <div className="container-back">
       {/* Опыт, качество и разумная цена */}
       <Section1 data={data?.data?.headers_arr?.[0]} />
+      {/* Наши продукты */}
+      <Section4 />
       {/* наша компания имеет долгую историю */}
       <Section2 data={data?.data?.aboutUs_arr?.[0]} />
       {/* Добавим яркость и стиль вашему дому */}
@@ -50,8 +52,6 @@ export const Home = () => {
         data={data?.data?.advantages_arr?.[0]}
         allFour={data?.data?.advantages4_arr}
       />
-      {/* Наши продукты */}
-      <Section4 />
       {/* обеспечение качественной продукцией в каждый дом */}
       <Section5
         data={data?.data?.goal_arr?.[0]}
