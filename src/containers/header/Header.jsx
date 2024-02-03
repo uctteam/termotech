@@ -1,15 +1,21 @@
 import { LOGO } from "assets/icon";
-import { MenuUnfoldOutlined } from "@ant-design/icons";
+import { GlobalOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { getLocale } from "utils/storages";
 
 export const Header = () => {
   const [menu, setmenu] = useState(false);
   const { t } = useTranslation();
+  const { i18n } = useTranslation();
+  const changeLang = (lng) => {
+    i18n.changeLanguage(lng);
+    window.location.reload();
+  };
   return (
     <>
       <div className="container mx-auto text-white">
-        <header className="flex items-center justify-between py-5">
+        <header className="flex items-center justify-between py-3">
           <div className="logotip">
             <img
               data-aos="fade-right"
@@ -57,6 +63,37 @@ export const Header = () => {
             </li>
             <li data-aos="fade-left" onClick={() => setmenu(false)}>
               <a href="#section9">{t("header.head7")}</a>
+            </li>
+            <li data-aos="fade-left" onClick={() => setmenu(false)}>
+              <div className="flex items-center justify-start gap-2">
+                <span className="text-white text-base font-normal">
+                  <GlobalOutlined />
+                </span>
+                <span
+                  onClick={() => changeLang("ru")}
+                  className={`text-base font-normal cursor-pointer ${
+                    getLocale() == "ru" ? "text-[#F58634]" : "text-white"
+                  }`}
+                >
+                  RU
+                </span>
+                <span
+                  onClick={() => changeLang("uz")}
+                  className={`text-base font-normal cursor-pointer ${
+                    getLocale() == "uz" ? "text-[#F58634]" : "text-white"
+                  }`}
+                >
+                  UZ
+                </span>
+                <span
+                  onClick={() => changeLang("en")}
+                  className={`text-base font-normal cursor-pointer ${
+                    getLocale() == "en" ? "text-[#F58634]" : "text-white"
+                  }`}
+                >
+                  EN
+                </span>
+              </div>
             </li>
           </ul>
         </header>

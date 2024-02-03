@@ -5,7 +5,6 @@ import {
   InstagramOutlined,
   MailOutlined,
   ShakeOutlined,
-  TwitterOutlined,
   UpCircleOutlined,
   YoutubeOutlined,
 } from "@ant-design/icons";

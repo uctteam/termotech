@@ -55,11 +55,11 @@ export const Section9 = ({ data }) => {
           <SwiperSlide key={i}>
             <div
               data-aos="fade-up"
-              className="bg-[#F7F8F8] rounded-lg flex items-center justify-center h-[110px]"
+              className="w-full rounded-md h-[107px] p-[6px] max-sm:h-[66px] max-md:h-[127px] items-center bg-[#F7F8F8] transition duration-300 ease-in-out flex justify-center"
             >
               <img
                 src={imgUrl + e?.file?.url_1}
-                className="w-[150px] h-[50px] object-contain object-center max-sm:w-[100px] max-sm:h-[33px]"
+                className="max-w-[150px] w-full h-full object-contain mix-blend-darken"
                 alt=""
                 loading="lazy"
               />

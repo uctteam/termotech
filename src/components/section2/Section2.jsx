@@ -14,7 +14,7 @@ export const Section2 = ({ data }) => {
       </h5>
       <h4
         data-aos="fade-up"
-        className="text-center font-bold text-5xl text-[#373435] max-w-[518px] mx-auto mt-3 mb-8 max-md:text-4xl max-sm:text-2xl max-sm:mb-5"
+        className="text-center font-bold text-5xl text-[#373435] max-w-[580px] mx-auto mt-3 mb-8 max-md:text-4xl max-sm:text-2xl max-sm:mb-5"
       >
         {data?.content?.title}
       </h4>

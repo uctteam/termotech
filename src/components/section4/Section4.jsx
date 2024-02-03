@@ -88,8 +88,8 @@ export const Section4 = () => {
                           <SwiperSlide key={f?.id}>
                             <Image
                               width={200}
-                              height={240}
-                              className="w-full h-[240px] object-cover object-center"
+                              height={270}
+                              className="w-full h-[270px] object-cover object-center"
                               src={
                                 f?.url_1
                                   ? imgUrl + f?.url_1
@@ -105,9 +105,12 @@ export const Section4 = () => {
                         <h5 className="text-[#0D0E25] font-semibold text-lg mt-1 mb-3">
                           {k?.content?.title}
                         </h5>
-                        <p className="text-sm text-[#475467] font-normal">
-                          {k?.content?.description}
-                        </p>
+                        <p
+                          className="text-sm text-[#475467] font-normal"
+                          dangerouslySetInnerHTML={{
+                            __html: k?.content?.description,
+                          }}
+                        />
                       </div>
                     </div>
                   </SwiperSlide>
