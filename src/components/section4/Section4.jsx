@@ -39,14 +39,14 @@ export const Section4 = () => {
                 data-aos-delay="100"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
-                className="text-4xl text-[#1E1E1E] font-bold text-center  max-md:text-3xl max-sm:text-2xl flex items-center justify-center gap-2"
+                className="text-4xl text-[#1E1E1E] font-bold text-center  max-md:text-3xl max-sm:text-2xl flex items-center justify-center gap-4"
               >
-                {e?.content?.title}
                 <img
                   src={LOGO}
                   className="w-20 h-20 object-contain"
                   alt="logo"
                 />
+                {e?.content?.title}
               </p>
               <p
                 data-aos="fade-up"
