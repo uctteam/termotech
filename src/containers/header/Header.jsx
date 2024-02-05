@@ -3,8 +3,9 @@ import { GlobalOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getLocale } from "utils/storages";
+import { imgUrl } from "service";
 
-export const Header = () => {
+export const Header = ({ data }) => {
   const [menu, setmenu] = useState(false);
   const { t } = useTranslation();
   const { i18n } = useTranslation();
@@ -12,6 +13,7 @@ export const Header = () => {
     i18n.changeLanguage(lng);
     window.location.reload();
   };
+  console.log(data);
   return (
     <>
       <div className="container mx-auto text-white">
@@ -19,7 +21,7 @@ export const Header = () => {
           <div className="logotip">
             <img
               data-aos="fade-right"
-              src={LOGO}
+              src={data?.file ? imgUrl + data?.file?.url_1 : LOGO}
               alt="logo"
               className="w-28 object-cover"
             />

@@ -42,7 +42,10 @@ export const Home = () => {
   return (
     <div className="container-back">
       {/* Опыт, качество и разумная цена */}
-      <Section1 data={data?.data?.headers_arr?.[0]} />
+      <Section1
+        data={data?.data?.headers_arr?.[0]}
+        data2={data?.data?.breands?.[0]}
+      />
       {/* Наши продукты */}
       <Section4 />
       {/* наша компания имеет долгую историю */}

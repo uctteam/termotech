@@ -18,6 +18,7 @@ export const Section4 = () => {
     url: `client/product/find/all?lang=${getLocale()}`,
     queryKey: ["alldatasporoduct", getLocale()],
   });
+  console.log(data);
   const { t } = useTranslation();
   return (
     <div className="bg-[#F7F7F7]">
@@ -42,7 +43,7 @@ export const Section4 = () => {
                 className="text-4xl text-[#1E1E1E] font-bold text-center  max-md:text-3xl max-sm:text-2xl flex items-center justify-center gap-4"
               >
                 <img
-                  src={LOGO}
+                  src={e?.file ? imgUrl + e?.file?.url_1 : LOGO}
                   className="w-20 h-20 object-contain"
                   alt="logo"
                 />
