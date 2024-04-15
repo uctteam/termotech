@@ -7,5 +7,14 @@
     "head5": "Fotogalereya",
     "head6": "Litsenziya",
     "head7": "Bizning mijozlarimiz"
-  }
+  },
+  "footer": {
+    "title": "Birgalikda ko'proq yutuqlarga <span className='text-[#F58634]'>erishing</span>",
+    "top": "yuqoriga",
+    "dowland": "Taqdimotni yuklab olish",
+    "site": "Biz ijtimoiy tarmoqlardamiz"
+  },
+  "ru": "RU",
+  "en": "EN",
+  "uz": "UZ"
 }

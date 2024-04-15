@@ -42,9 +42,10 @@ export const Footer = ({ data }) => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             className="text-4xl text-[#FFF] font-semibold  max-md:text-3xl max-sm:text-2xl"
-          >
-            Достичь большего <span className="text-[#F58634]">вместе</span>
-          </h2>
+            dangerouslySetInnerHTML={{
+              __html: t("footer.title"),
+            }}
+          />
           <a
             data-aos="fade-up"
             data-aos-delay="100"
@@ -53,7 +54,7 @@ export const Footer = ({ data }) => {
             href="#section1"
             className="text-2xl text-[#FFF] font-bold flex items-center justify-center gap-2 max-md:hidden"
           >
-            вверх
+            {t("footer.top")}
             <span className="font-light text-4xl">
               <UpCircleOutlined />
             </span>
@@ -97,7 +98,7 @@ export const Footer = ({ data }) => {
                   getLocale() == "ru" ? "text-[#F58634]" : "text-white"
                 }`}
               >
-                RU
+                {t("ru")}
               </span>
               <span
                 onClick={() => changeLang("uz")}
@@ -105,7 +106,7 @@ export const Footer = ({ data }) => {
                   getLocale() == "uz" ? "text-[#F58634]" : "text-white"
                 }`}
               >
-                UZ
+                {t("uz")}
               </span>
               <span
                 onClick={() => changeLang("en")}
@@ -113,7 +114,7 @@ export const Footer = ({ data }) => {
                   getLocale() == "en" ? "text-[#F58634]" : "text-white"
                 }`}
               >
-                EN
+                {t("en")}
               </span>
             </div>
           </div>
@@ -191,7 +192,8 @@ export const Footer = ({ data }) => {
               className="flex items-center justify-center text-base text-[#FFF] gap-3 px-5 py-3 border border-white rounded-3xl w-max max-md:w-full"
               rel="noreferrer"
             >
-              <FileTextOutlined /> Cкачать презентацию
+              <FileTextOutlined />
+              {t("footer.dowland")}
             </a>
             <p
               data-aos="fade-up"
@@ -200,7 +202,7 @@ export const Footer = ({ data }) => {
               data-aos-easing="ease-in-out"
               className="text-base text-[#FFF] mt-8"
             >
-              Мы в социальных сетях
+              {t("footer.site")}
             </p>
             <div
               data-aos="fade-up"

@@ -7,5 +7,14 @@
     "head5": "Photogallery",
     "head6": "License",
     "head7": "Our customers"
-  }
+  },
+  "footer": {
+    "title": "Achieve more <span class='text-[#F58634]'>together</span>",
+    "top": "up",
+    "dowland": "Download presentation",
+    "site": "We are in social networks"
+  },
+  "ru": "RU",
+  "en": "EN",
+  "uz": "UZ"
 }

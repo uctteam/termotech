@@ -13,7 +13,6 @@ export const Header = ({ data }) => {
     i18n.changeLanguage(lng);
     window.location.reload();
   };
-  console.log(data);
   return (
     <>
       <div className="container mx-auto text-white">
@@ -77,7 +76,7 @@ export const Header = ({ data }) => {
                     getLocale() == "ru" ? "text-[#F58634]" : "text-white"
                   }`}
                 >
-                  RU
+                  {t("ru")}
                 </span>
                 <span
                   onClick={() => changeLang("uz")}
@@ -85,7 +84,7 @@ export const Header = ({ data }) => {
                     getLocale() == "uz" ? "text-[#F58634]" : "text-white"
                   }`}
                 >
-                  UZ
+                  {t("uz")}
                 </span>
                 <span
                   onClick={() => changeLang("en")}
@@ -93,7 +92,7 @@ export const Header = ({ data }) => {
                     getLocale() == "en" ? "text-[#F58634]" : "text-white"
                   }`}
                 >
-                  EN
+                  {t("en")}
                 </span>
               </div>
             </li>
